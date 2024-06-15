@@ -1,0 +1,12 @@
+Raciocínio utilizado para o desenvolvimento da aplicação de Web Scraping
+
+    Escolhi o Python como linguagem principal, pois ja tinha familiaridades com a linguagem, e por ser uma boa linguagem para lidar com dados.
+    Framework escolhi o Selenium, pela dica e por ja ter ouvido falar sobre Selenium e Python juntos.
+    Para fazer a API após algumas pesquisas escolhi o Flask.
+
+    Começo a aplicação criando uma instancia do Flask e declarando a variável URL que contem o endereço para o site desejado, logo após tentei fazer com que o navegador
+    executasse a função sem aparecer na tela, porém não obtive sucesso, e não tive tempo para resolver, logo após eu declaro a função "scraping()" que vai abrir
+    o navegador (no meu caso, o edge), acessar a url fornecida na variável, acessar o conteúdo através do XPATH que eu peguei através da ferramenta Inspect do navegador,
+    em seguida ela retornará o índice 0 do array em formato de texto, e por fim, vai fechar a instancia do navegador que foi aberta para executar a função.
+    
+    Termino a aplicação criando a rota "/scrape" para a API realizar a execução da aplicação e retornar o texto (debug=true para ajudar no desenvolvimento). 
